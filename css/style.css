@@ -1,0 +1,222 @@
+@charset "UTF-8";
+html {
+    line-height: 95%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* reset.css */
+
+ul {
+    list-style-type: disc;
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    display: list-item;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    border: inherit;
+}
+
+
+/* end reset.css */
+
+body {
+    color: #979797;
+    background-color: #F2F2F2;
+    font-size: 1.2rem;
+    font-family: system-ui, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    margin: 0;
+}
+
+
+/* header css begin */
+
+.header {
+    width: 100%;
+    background-color: #294C7A;
+    display: block;
+}
+
+.header-top {
+    margin: 0 auto;
+    width: 84%;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    border-style: none;
+    vertical-align: bottom;
+    width: 122px;
+    height: 24px;
+}
+
+.header-desc {
+    padding-left: 12px;
+}
+
+.header-desc>h1 {
+    font-size: 12px;
+    color: #BFC9D7;
+    letter-spacing: -.05em;
+    white-space: nowrap;
+    margin: 0;
+    font-weight: normal;
+}
+
+.header-signup {
+    margin-left: auto;
+}
+
+.header-signup .header-signup-list {
+    display: flex;
+    margin: 0;
+    padding: 6px 15px 8px;
+    align-items: center;
+    background-color: #345584;
+    border-radius: 4px;
+}
+
+.header-signup-list .header-signup-item:not(:last-child) {
+    position: relative;
+    padding-right: 15px;
+}
+
+.header-signup-list .header-signup-item:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background-color: #BFC9D7;
+    position: absolute;
+    top: 4px;
+    right: 7px;
+}
+
+.header-signup-item>a {
+    font-size: 13px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.header-search {
+    width: 288px;
+    margin-left: 10px;
+}
+
+.header-search .header-search-form {
+    display: flex;
+}
+
+.header-search-form .header-search-input {
+    background: #fff;
+    line-height: 30px;
+    height: 30px;
+    font-size: 13px;
+    padding-left: 15px;
+    border-radius: 4px 0 0 4px;
+    width: 258px;
+    border: inherit;
+}
+
+.header-search-form .header-search-button {
+    background-color: #3081c9;
+    background-image: url(../images/finder-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 18px;
+    border-radius: 0 4px 4px 0;
+    height: 30px;
+    width: 30px;
+    border: inherit;
+}
+
+.header-nav {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.header-nav-list {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 0 13px;
+}
+
+.header-nav-item {
+    display: inline-block;
+    font-size: 13px;
+    color: #BFC9D7;
+    letter-spacing: -.05em;
+}
+
+.header-nav-list .header-nav-item:not(:last-child) {
+    position: relative;
+    padding-right: 20px;
+}
+
+.header-nav-list .header-nav-item:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background-color: #BFC9D7;
+    position: absolute;
+    top: 2px;
+    right: 7px;
+}
+
+.header-nav-item.active a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.global-nav {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 6px 2px -6px rgba(0, 0, 0, 0.15);
+}
+
+.global-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.global-nav .nav-item {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.global-nav .nav-item a {
+    display: inline-block;
+    border-radius: 8px;
+    color: #294C7A;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    line-height: 20px;
+    transition: 0.15s;
+}
+
+.global-nav .nav-item.active a,
+.global-nav .nav-item a:hover {
+    font-weight: bold;
+}
+
+
+/* header css end */
