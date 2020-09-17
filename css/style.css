@@ -30,8 +30,9 @@
     }
     
     .header-top,
-    .footer,
-    .header-nav {
+    .header-nav,
+    .ranking,
+    .footer {
         width: 84%;
         margin: 0 auto;
     }
@@ -135,10 +136,10 @@
     
     .header-search-form .header-search-button {
         background-color: #3081c9;
-        background-image: url(../images/finder-icon.png);
+        background-image: url(../images/common/icon_search.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 18px 18px;
+        background-size: 19px 19px;
         border-radius: 0 4px 4px 0;
         height: 30px;
         width: 30px;
