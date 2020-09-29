@@ -92,7 +92,7 @@
         margin: 0;
         padding: 6px 15px 8px;
         align-items: center;
-        background-color: #294C7A;
+        background-color: #345584;
         border-radius: 4px;
     }
     
@@ -107,7 +107,7 @@
         height: 13px;
         background-color: #BFC9D7;
         position: absolute;
-        top: 4px;
+        top: 2px;
         right: 7px;
     }
     
@@ -220,13 +220,11 @@
     /* ranking css begin */
     
     .ranking-wrapper {
-        display: table;
-        table-layout: fixed;
+        display: flex;
         padding: 30px 0;
     }
     
     .article-box {
-        display: table-cell;
         width: 188px;
     }
     
@@ -445,6 +443,11 @@
         background: #Fff;
         border: 1px solid #f1f1f1;
     }
+    
+    .addition-info {
+        position: absolute;
+        bottom: 16px;
+    }
     /* main end */
     /* footer css begin*/
     
@@ -452,7 +455,7 @@
         font-size: 12px;
         line-height: 1;
     }
-    
+    /* grid layout
     .footer-company-services {
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -461,8 +464,26 @@
         border-bottom: 1px solid #e0e0e0;
     }
     
-    .footer-colwrap-center {
+    #footer-colwrap-center {
         grid-column: 2/ 4;
+    }
+    
+    */
+    /* same as above but with display: table */
+    
+    .footer-company-services {
+        display: flex;
+        width: 100%;
+        padding: 70px 0 10px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .footer-company-services>section {
+        width: 25%;
+    }
+    
+    #footer-colwrap-center {
+        width: 50%;
     }
     
     .footer-col-title {
@@ -472,17 +493,17 @@
         font-weight: normal;
     }
     
-    .footer-company-services ul {
-        padding: 0;
-        color: #797979;
-        height: 217px;
-    }
-    
-    .footer-colwrap-center>ul {
+    #footer-colwrap-center>ul {
         columns: 2;
         -webkit-columns: 2;
         -moz-columns: 2;
         column-fill: auto;
+    }
+    
+    .footer-company-services ul {
+        padding: 0;
+        color: #797979;
+        height: 217px;
     }
     
     .footer-company-services li {
