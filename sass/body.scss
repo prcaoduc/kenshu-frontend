@@ -1,0 +1,131 @@
+/* main begin */
+
+main {
+    background-color: #fff;
+}
+
+.main-wrapper {
+    display: flex;
+    padding: 40px 0;
+}
+
+.contents {
+    width: 779px;
+    &-wrapper {
+        margin-top: 10px;
+    }
+    &__h2 {
+        font-family: Hiragino Kaku Gothic ProN;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        color: #3B3B3B;
+        margin-bottom: 20px;
+    }
+}
+
+.btn-more {
+    width: 110px;
+    height: 38px;
+    margin: 0 auto;
+    display: block;
+    color: #FFFFFF;
+    background: #3081C9;
+    margin: 0 auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.main-articles {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-article {
+    width: 380px;
+    height: 118px;
+    padding: 15px 0 13px;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #E4E4E4;
+    &__img {
+        margin-left: auto;
+        width: 100px;
+    }
+    &__content {
+        padding-right: 15px;
+        width: 265px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 160%;
+        margin: 0 0 3px;
+        word-break: break-all;
+        color: #3B3B3B;
+    }
+    &__time {
+        display: inline-block;
+    }
+    &__company {
+        display: inline-block;
+        margin: 0 12px 0;
+    }
+    &:nth-child(2n) {
+        margin-left: 18px;
+    }
+    &__info {
+        position: absolute;
+        bottom: 16px;
+    }
+}
+
+.side {
+    width: 308px;
+    margin-left: auto;
+    &-keywords {
+        border-bottom: 1px solid #E4E4E4;
+        &__h5 {
+            font-size: 18px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            color: #3B3B3B;
+            margin: 0;
+            padding: 0 0 40px;
+        }
+        &__list {
+            padding-bottom: 10px;
+        }
+        &__item {
+            background: #F1F1F1;
+            border-radius: 11px;
+            margin: 0 10px 9px 0;
+            display: inline-block;
+            >a {
+                font-size: 12px;
+                line-height: 180%;
+                padding: 0 8px;
+                display: flex;
+                align-items: center;
+                color: #3B3B3B;
+            }
+            &:last-child {
+                background: #Fff;
+                border: 1px solid #f1f1f1;
+            }
+        }
+    }
+}
+
+
+/* main end */

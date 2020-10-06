@@ -1,0 +1,76 @@
+/* footer css begin*/
+
+.footer {
+    font-size: 12px;
+    line-height: 1;
+}
+
+
+/* grid layout
+.footer-company-services {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 70px 0 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#footer-colwrap-center {
+    grid-column: 2/ 4;
+}
+
+*/
+
+
+/* same as above but with display: table */
+
+.footer-company-services {
+    display: flex;
+    width: 100%;
+    padding: 70px 0 10px;
+    border-bottom: 1px solid #e0e0e0;
+    &__col {
+        width: 25%;
+        &--center {
+            width: 50%;
+        }
+    }
+    &__title {
+        margin: 0 0 18px;
+        color: #000;
+        font-size: 13px;
+        font-weight: normal;
+    }
+    &__list {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        column-fill: auto;
+        padding: 0;
+        color: #797979;
+        height: 217px;
+    }
+    &__item {
+        margin: 0 0 18px;
+    }
+}
+
+.footer-company-contact {
+    padding: 13px 0 13px;
+    &__list {
+        padding: 0;
+    }
+    &__item {
+        margin-right: 25px;
+        display: inline-block;
+    }
+}
+
+.footer-copyright {
+    font-size: 11px;
+    color: #797979;
+    padding: 5px 0 10px;
+}
+
+
+/* footer css end */
