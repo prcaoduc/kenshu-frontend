@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@import 'header';
-@import 'body';
-@import 'footer';
 html {
     line-height: 95%;
 }
@@ -55,3 +52,7 @@ body {
 
 
 /* end default */
+
+@import 'header';
+@import 'body';
+@import 'footer';

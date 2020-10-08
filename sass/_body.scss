@@ -11,9 +11,6 @@ main {
 
 .contents {
     width: 779px;
-    &-wrapper {
-        margin-top: 10px;
-    }
     &__h2 {
         font-family: Hiragino Kaku Gothic ProN;
         font-style: normal;
@@ -26,6 +23,10 @@ main {
         color: #3B3B3B;
         margin-bottom: 20px;
     }
+}
+
+.contents-wrapper {
+    margin-top: 10px;
 }
 
 .btn-more {
@@ -92,37 +93,38 @@ main {
 .side {
     width: 308px;
     margin-left: auto;
-    &-keywords {
-        border-bottom: 1px solid #E4E4E4;
-        &__h5 {
-            font-size: 18px;
-            line-height: 27px;
+}
+
+.side-keywords {
+    border-bottom: 1px solid #E4E4E4;
+    &__h5 {
+        font-size: 18px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        color: #3B3B3B;
+        margin: 0;
+        padding: 0 0 40px;
+    }
+    &__list {
+        padding-bottom: 10px;
+    }
+    &__item {
+        background: #F1F1F1;
+        border-radius: 11px;
+        margin: 0 10px 9px 0;
+        display: inline-block;
+        >a {
+            font-size: 12px;
+            line-height: 180%;
+            padding: 0 8px;
             display: flex;
             align-items: center;
             color: #3B3B3B;
-            margin: 0;
-            padding: 0 0 40px;
         }
-        &__list {
-            padding-bottom: 10px;
-        }
-        &__item {
-            background: #F1F1F1;
-            border-radius: 11px;
-            margin: 0 10px 9px 0;
-            display: inline-block;
-            >a {
-                font-size: 12px;
-                line-height: 180%;
-                padding: 0 8px;
-                display: flex;
-                align-items: center;
-                color: #3B3B3B;
-            }
-            &:last-child {
-                background: #Fff;
-                border: 1px solid #f1f1f1;
-            }
+        &:last-child {
+            background: #Fff;
+            border: 1px solid #f1f1f1;
         }
     }
 }
